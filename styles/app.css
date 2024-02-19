@@ -13,6 +13,11 @@
     src: url(../fonts/HelveticaNeueBold.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Helvetica_Neue_Ultra-Light', sans-serif;
+    src: url(../fonts/HelveticaNeueUltraLight.ttf) format('truetype');
+}
+
 /* -----------------Normalize Css------------------- */
 
 html {
@@ -259,12 +264,12 @@ body {
 
 .menu__ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 18.9375rem;
     height: 1.5rem;
     list-style: none;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
     /* background-color: cadetblue; */
 }
 
@@ -292,7 +297,99 @@ body {
     color: #34c759;
 }
 
-/* .header__info {} */
+.header-info__wrapper {
+    /* background-color: #524343; */
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.header-info__title {
+    text-transform: capitalize;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 68.75rem;
+    /* height: 10.1875; */
+    font-size: 4.5rem;
+    line-height: 5.27375rem;
+    letter-spacing: .5rem;
+    margin: 5rem auto .3rem auto;
+}
+
+.header-info-title__regular {
+    display: inline-block;
+    font-family: 'Helvetica_Neue_Ultra-Light', sans-serif;
+    font-weight: 0;
+}
+
+.header-info-title__bold {
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'Helvetica_Neue_Bold', sans-serif;
+}
+
+.header-info__content {
+    width: 37.1875rem;
+    height: 3.25rem;
+    margin: 0 auto;
+    line-height: 1.625rem;
+    letter-spacing: .0125rem;
+}
+
+.header-info__btn {
+    width: 13.75rem;
+    height: 4.5rem;
+    color: #000;
+    background-color: var(--primary__color);
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    border: none;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin: 2.4rem auto 3rem auto;
+    cursor: pointer;
+}
+
+.header-info__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 60rem;
+    height: 5.9375rem;
+    margin: 2rem auto;
+}
+
+.header-info-contact__time,
+.header-info-contact__address,
+.header-info-contact__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5.9375rem;
+    width: 15.3125rem;
+
+}
+
+.header-info-contact__icon {
+    font-size: 1.7rem;
+}
+
+.header-info-contact__text {
+    font-family: 'Helvetica_Neue_Ultra-Light', sans-serif;
+}
+
+.header-info-contact__icon,
+.header-info-contact__sub-text {
+    color: var(--icon__color);
+}
+
+.header-info-contact__time {
+    font-family: 'Helvetica_Neue_Ultra-Light', sans-serif;
+}
 
 /* -------------------M A I N __ a b o u t --------------------------*/
 
